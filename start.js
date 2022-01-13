@@ -5,7 +5,7 @@ if(pass==user)
   alert("Access granted");
 } else
 {
-  alert("Access denied");
-  window.location("https://www.google.com")
+  alert("Verifying");
+  window.location = "https://lukkaggeskola.github.io/unblocked/denied.html";
   
 }
