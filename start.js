@@ -6,7 +6,7 @@ if(pass==user)
   alert("Press OK to proceed");
 } else
 {
-  alert("Press OK to proceed");
+  
   window.location = "https://lukkaggeskola.github.io/unblocked/denied.html";
   
 }
