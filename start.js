@@ -1,4 +1,4 @@
-var pass = "kle12"
+var pass = "kle13"
 var user = prompt();
 if(pass==user)
 {
