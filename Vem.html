@@ -15,6 +15,7 @@
   </head>
   <body style="background-color:black;">
     <h2 style="color:white;">Select a user</h2>
+    <button onclick="startguest()">Guest</button>
     <button onclick="gga()">Kagge</button> 
     <button onclick="ga()">Jonatan</button>
     <button onclick="no()">Milton</button>
@@ -23,6 +24,13 @@
     <button onclick="noB()">Viktor B</button> 
     <button onclick="munk()">Munk</button>
     <button onclick="kel()">Kelvin</button>
+    <script>
+      function startguest()
+      {
+        alert("Starting guest mode. Press ok to continue")
+        window.location = "https://kaggesite.ml/guest.html"
+      }
+    </script>
     <script>
       function kel(){
       var passkel = "Kelvin"
