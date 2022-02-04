@@ -18,7 +18,7 @@ if(user2==code2)
 }
 if(user3==code3)
 {
-  window.location="https://kaggesite.ml/a"
+  window.location="https://kaggesite.ml/VIP.html"
 }else
 {
   window.location="https://kaggesite.ml/denied.html"
