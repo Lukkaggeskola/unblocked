@@ -16,15 +16,93 @@
     <script id="_wauamq">var _wau = _wau || []; _wau.push(["small", "l2e4e2mf9f", "amq"]);</script><script async src="//waust.at/s.js"></script>
     <title>Г̶̱͔̘̭̯̬͂̑̈̂̔̕͘͜͠а̴͇͇̘̣̭̗̾͒͛͂͆̈̋͂̌̕м̵̰͙̝͖̫̂̂̌̓ё̷̼͎̘̤̺́́̆͝х̶͈̗̞͙̇͜у̵͔̣̺̳̞͐̏̈́͆̓̉̀͛́б̴̦͍͉͉͝</title>
     <style>
-body{
-    background-image: url('https://wallpaperxyz.com/wp-content/uploads/Gif-Animated-Wallpaper-Background-Full-HD-Free-Download-for-PC-Macbook-261121-Wallpaperxyz.com-38.gif');
-    background-size: cover;
-    
-    
-    
-    height: 100vh;
-    padding:0;
-    margin:0;
+/**
+   Pure CSS button hover animation
+   Referenced: http://ff14.game.naver.com/  
+**/
+body {
+  color: #fff;
+  background: #000;
+  text-align: center;
+  padding: 50px;  
+}
+
+.btn {
+    --text-color-normal: #8b8b8b;
+    --text-color-hover: #d4d4d4;
+    --border-radius: 0;
+    --border-color-normal: rgba(100,100,100,0.5);
+    --border-color-hover: #2678ff;
+  
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 100%;
+    font-size: 14px;
+    line-height: 34px;
+    letter-spacing: -.025em;
+    word-spacing: -.05em;
+    transition: .5s;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px auto;
+    background: transparent;
+    border: 1px solid var(--border-color-normal);
+    border-radius: var(--border-radius); 
+    color: var(--text-color-normal);
+}
+
+.btn:focus {
+    color: var(--text-color-hover);
+    outline: 1px solid var(--border-color-hover);
+}
+
+.btn:before,
+.btn:after {
+    position: absolute;
+    content: "";
+    left: -1px;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    box-sizing: border-box;
+    z-index: 11;
+    transform: scale(0);
+    transition: .5s;
+    border-radius: var(--border-radius); 
+}
+
+.btn:before {
+    border-bottom: 1px solid var(--border-color-hover);
+    border-left: 1px solid var(--border-color-hover);
+    transform-origin: 0 100%;
+}
+
+.btn:after {
+    border-top: 1px solid var(--border-color-hover);
+    border-right: 1px solid var(--border-color-hover);
+    transform-origin: 100% 0;
+}
+
+.btn:hover {
+  color: var(--text-color-hover);
+}
+
+.btn:hover:before,
+.btn:hover:after {
+  transform: scale(1);
+}
+
+.btn.red {
+  --border-color-hover: #FF3567;
+}
+
+.btn.green {
+  --border-color-hover: #4DEAAE;
+}
+
+.btn.yellow {
+  --border-color-hover: #F4E23D;
 }
 </style>
     </head>
@@ -45,19 +123,17 @@ body{
       
                       
     </script>
-    <h2 style="color:white;">Select a game</h2>
-    <p style="color:white;">Slope will take longer to load</p>
-    <button onclick="location.href='/games/table/gameplay2.html'" style="color:red;">Table Tennis</button>
-    <button onclick="location.href='/games/slope/'" style="color:orange;">Slope</button>
-    <button onclick="location.href='/games/cookie/'" style="color:yellow;">Cookie Clicker</button>
-    <button onclick="location.href='/games/snake'" style="color:green;">Snake</button>
-    <button onclick="location.href='https://lukkaggeskola.github.io/hextris'" style="color:blue;">Hextris (Bug Varning)</button>
-    <button onclick=location.href='/games/tetris/' style="color:magenta;">Tetris</button>
-
-    <button onclick ="location.href='/games/bob5'" style="color:violet;">Bob the robber 5</button>
-    <button disabled style="color:red;">Bob the robber 4</button>
-    <button onclick ="location.href='/games/csgo/'" style="color:orange;">Case clicker 1</button>
-    <button onclick="location.href='https://kaggesite.ml/games/csgo2kle12/'" style="color:green;">Case clicker 2</button>
+    <h3>V.I.P</h3>
+<p>
+  <button type="button" class="btn" onclick="location.href='/games/table/gameplay2.html'">Table tennis</button>
+  <button type="button" class="btn red" onclick="location.href='/games/slope/'"          >Slope</button>
+  <button type="button" class="btn green" onclick="location.href='/games/cookie/'"       >Cookie Clicker</button>
+  <button type="button" class="btn yellow" onclick="location.href='/games/snake/'"       >Snake</button>
+  <button type="button" class="btn" onclick="location.href='/games/tetris'"              >Tetris</button>
+  <button type="button" class="btn red" onclick="location.href='/games/bob5/'"           >BTR 5</button>
+  <button type="button" class="btn green" onclick="location.href='/games/csgo/'"         >Case Clicker 1</button>
+  <button type="button" class="btn yellow" onclick="location.href='/games/csgo2kle12/'"  >Case Clicker 2</button>
+</p>
    
   </body>
 </html>
