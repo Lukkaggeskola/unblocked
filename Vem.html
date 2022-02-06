@@ -2,15 +2,95 @@
 <html>
   <head>
     <style>
-    body{
-    background-image: url('https://wallpaperaccess.com/full/2641054.gif');
-    background-size: cover;
-    
-    
-    
-    height: 100vh;
-    padding:0;
-    margin:0;
+   body {
+  background: #2ecc71;
+  font-size: 62.5%;
+}
+
+.container {
+  padding: 2em;
+}
+
+/* GENERAL BUTTON STYLING */
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button {
+  background: none;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 2em 6em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+button::before,
+button::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #2ecc71;
+}
+
+/* BUTTON 4 */
+.btn-4::before {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-4::after {
+  background: #FF9200;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-4:hover:after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+/* White */
+.btn-whi::before {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-whi::after {
+  background: #2ecc71;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-whi:hover:after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
 }
     </style>
      <!-- Hotjar Tracking Code for https://kaggesite.ml -->
@@ -28,7 +108,7 @@
   <body style="background-color:black;">
     <h2 style="color:white;">Select a user</h2>
     
-    <button onclick="gga()" style="color:Red;">Kagge - DEV</button> 
+    <button onclick="gga()" ">Kagge - button> 
     <button onclick="noo()" style="color:magenta;">Viktor ÖG - MOD</button> 
     <button onclick="no()" style="color:orange;">Milton - V.I.P</button>
     <button onclick="ga()">Leon</button> 
