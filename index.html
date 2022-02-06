@@ -80,8 +80,7 @@ canvas {
 	var waves = [];
 	var waveHeight = 60;
 	var colours = ["#f80000","#00f800","#0000f8"];
-    </script>
-    <script>
+   
   // Initiator function
 	function init() {
 		cvs = document.getElementById("canvas");
@@ -94,8 +93,8 @@ canvas {
 
     update();
 	}
-    </script>
-    <script>
+
+   
 
 	function update() {
     var fill = window.getComputedStyle(document.querySelector(".header"),null).getPropertyValue("background-color");
@@ -113,8 +112,9 @@ canvas {
     
     requestAnimationFrame(update);
 	}
-    </script>
-    <script>
+    
+	    
+
 	function wave(colour, lambda, nodes) {
     
 		this.colour = colour;
@@ -129,15 +129,13 @@ canvas {
 		}
 		console.log(this.nodes);
 	}
-    </script>
-    <script>
+
 	function bounce(nodeArr) {
 		nodeArr[1] = waveHeight/2*Math.sin(nodeArr[2]/20)+cvs.height/2;
 		nodeArr[2] = nodeArr[2] + nodeArr[3];
 		
 	}
-    </script>
-    <script>
+
 	function drawWave (obj) {
     
 		var diff = function(a,b) {
@@ -166,8 +164,6 @@ canvas {
 		ctx.fill();
 	}
 
-    </script>
-    <script>
 	function drawNodes (array) {
 		ctx.strokeStyle = "#888";
     
@@ -179,8 +175,7 @@ canvas {
 		}
 		
 	}
-</script>
-    <script>
+
 	function drawLine (array) {
 		ctx.strokeStyle = "#888";
     
@@ -193,8 +188,7 @@ canvas {
     
 		ctx.stroke();
 	}
-    </script>
-    <script>
+
 	function resizeCanvas(canvas,width,height) {
     
 		if (width && height) {
