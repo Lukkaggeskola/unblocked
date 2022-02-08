@@ -100,6 +100,18 @@ button:hover {
 }
 
     </style>
+	  <script>
+    /*function check(e)
+    {
+    alert(e.keyCode);
+    }*/
+    document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
+                alert('not allowed');
+            }
+            return false;
+    };
+    </script>
      <!-- Hotjar Tracking Code for https://kaggesite.ml -->
 <script>
     (function(h,o,t,j,a,r){
