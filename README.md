@@ -1,1 +1,3 @@
-A place where you play games when you are bored
+Email lucas.lundahl@skola.nykarn.se for a account
+
+DESKTOP ONLY
