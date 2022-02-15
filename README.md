@@ -1,3 +1,3 @@
-Email lucas.lundahl@skola.nykarn.se for a account
+Email kaggesite@gmail.com for a account
 
 DESKTOP ONLY
