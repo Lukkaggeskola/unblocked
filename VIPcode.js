@@ -8,18 +8,18 @@ if(user1==code1)
 {
 }else
 {
-  window.location="https://kaggesite.ml/denied.html"
+  window.location="https://kagge.gq/denied.html"
 }
 if(user2==code2)
 {
 }else
 {
-  window.location="https://kaggesite.ml/denied.html"
+  window.location="https://kagge.gq/denied.html"
 }
 if(user3==code3)
 {
   
 }else
 {
-  window.location="https://kaggesite.ml/denied.html"
+  window.location="https://kagge.gq/denied.html"
 }
