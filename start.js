@@ -7,5 +7,5 @@ if(pass==user)
 {
 }else
 {
-  window.location = "https://www.kaggesite.ml/denied"
+  window.location = "https://www.kagge.gq/denied"
 }
