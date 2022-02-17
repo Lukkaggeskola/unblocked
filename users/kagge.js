@@ -2,7 +2,7 @@
         {
           var us = prompt()
           var g = " , . ," 
-          if(us==)
+          if(us==g)
           {
             window.location = "https://kagge.gq/VIP.html"
           }else
