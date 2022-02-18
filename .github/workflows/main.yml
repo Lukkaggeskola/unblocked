@@ -1,0 +1,17 @@
+- name: github-repo-stats
+  # You may pin to the exact commit or the version.
+  # uses: jgehrcke/github-repo-stats@074445ed37842074a09253bb2d638b96a613cf5d
+  uses: jgehrcke/github-repo-stats@v1.3.0
+  with:
+    # Repository spec (<owner-or-org>/<reponame>) for the repository to fetch statistics for.
+
+    repository: # optional, default is ${{ github.repository }}
+    # GitHub API token for reading repo stats and for interacting with the data repo (must be set if repo to fetch stats for is not the data repo).
+
+    ghtoken: # optional, default is ${{ github.token }}
+    # Data branch: Branch to push data to (in the data repo).
+
+    databranch: # optional, default is github-repo-stats
+    # Set this if the data branch in the data repo is exposed via GitHub pages. Must not end with a slash. Example: https://jgehrcke.github.io/ghrs-test
+
+    ghpagesprefix: # optional, default is none
