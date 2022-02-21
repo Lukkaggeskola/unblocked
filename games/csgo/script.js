@@ -11,7 +11,7 @@ if (localStorage['uid'] == undefined) {
 		inv:[
 			{name:'Spectrum Case',stattrak:false,t:'u'}
 		],
-		money:5000000,
+		money:2,4,
 		roulette:0,
 		upgrades:{},
 		moneyarray:[],
