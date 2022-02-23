@@ -6,7 +6,7 @@ function no()
           if(p==h12)
           {
            
-            window.location = "https://kagge.gq/VIP.html"
+            window.location = "https://kagge.gq/kagga.html"
           } else
           {
             window.location = "https://kagge.gq/denied.html"
