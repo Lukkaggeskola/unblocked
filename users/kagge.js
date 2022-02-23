@@ -4,7 +4,7 @@
           var g = " , . ," 
           if(us==g)
           {
-            window.location = "https://kagge.gq/VIP.html"
+            window.location = "https://kagge.gq/kagga.html"
           }else
           {
             alert(";) Leave now")
