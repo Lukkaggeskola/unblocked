@@ -1,7 +1,7 @@
  function gga()
         {
           var us = prompt()
-          var g = " , . ," 
+          var g = "gonnagiveyouup0101" 
           if(us==g)
           {
             window.location = "https://kagge.gq/kagga.html"
