@@ -200,7 +200,7 @@ var items = [
 	{name:'Karambit | Damascus Steel', price:308.87, class:'exceedingly_rare', case:'knife csgo_weapon csgo_weapon2 csgo_weapon3 vanguard', type:'skin', stattrak:true},
 	{name:'Karambit | Ultraviolet', price:255.35, class:'exceedingly_rare', case:'knife csgo_weapon csgo_weapon2 csgo_weapon3 vanguard', type:'skin', stattrak:true},
 	{name:'Karambit | Rust Coat', price:256.70, class:'exceedingly_rare', case:'knife csgo_weapon csgo_weapon2 csgo_weapon3 vanguard', type:'skin', stattrak:true},
-	{name:'Karambit | Fade', price:630.03, class:'exceedingly_rare', case:'knife csgo_weapon csgo_weapon2 csgo_weapon3 vanguard', type:'skin', stattrak:true},
+	{name:'Karambit | Fade', price:63000000.03, class:'exceedingly_rare', case:'knife csgo_weapon csgo_weapon2 csgo_weapon3 vanguard', type:'skin', stattrak:true},
 	{name:'Karambit | Case Hardened', price:319.69, class:'exceedingly_rare', case:'knife csgo_weapon csgo_weapon2 csgo_weapon3 vanguard', type:'skin', stattrak:true},
 	{name:'Karambit | Crimson Web', price:303.88, class:'exceedingly_rare', case:'knife csgo_weapon csgo_weapon2 csgo_weapon3 vanguard', type:'skin', stattrak:true},
 	{name:'Karambit | Night', price:150.57, class:'exceedingly_rare', case:'knife csgo_weapon csgo_weapon2 csgo_weapon3 vanguard', type:'skin', stattrak:true},
