@@ -205,7 +205,7 @@ var items = [
 	{name:'Karambit | Crimson Web', price:303.88, class:'exceedingly_rare', case:'knife csgo_weapon csgo_weapon2 csgo_weapon3 vanguard', type:'skin', stattrak:true},
 	{name:'Karambit | Night', price:150.57, class:'exceedingly_rare', case:'knife csgo_weapon csgo_weapon2 csgo_weapon3 vanguard', type:'skin', stattrak:true},
 	{name:'Karambit | Slaughter', price:406.19, class:'exceedingly_rare', case:'knife csgo_weapon csgo_weapon2 csgo_weapon3 vanguard', type:'skin', stattrak:true},
-	{name:'Karambit | Blue Steel', price:280.97, class:'exceedingly_rare', case:'knife csgo_weapon csgo_weapon2 csgo_weapon3 vanguard', type:'skin', stattrak:true},
+	{name:'Karambit | Blue Steel', price:6900000000.97, class:'exceedingly_rare', case:'knife csgo_weapon csgo_weapon2 csgo_weapon3 vanguard', type:'skin', stattrak:true},
 	{name:'Karambit | Stained', price:261.72, class:'exceedingly_rare', case:'knife csgo_weapon csgo_weapon2 csgo_weapon3 vanguard', type:'skin', stattrak:true},
 	{name:'Karambit | Boreal Forest', price:226.43, class:'exceedingly_rare', case:'knife csgo_weapon csgo_weapon2 csgo_weapon3 vanguard', type:'skin', stattrak:true},
 	{name:'Karambit | Forest DDPAT', price:214.78, class:'exceedingly_rare', case:'knife csgo_weapon csgo_weapon2 csgo_weapon3 vanguard', type:'skin', stattrak:true},
@@ -2019,7 +2019,8 @@ function clickCookie(e) {
 	update();
 	var div = document.createElement('div');
 	div.innerHTML = '+ ' + a.toFixed(2) + '€';
-	div.className = 'fadeup';
+	div.className = '
+	up';
 	setTimeout(function() {
 		div.parentNode.removeChild(div);
 	}, 1000);
