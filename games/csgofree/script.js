@@ -570,7 +570,7 @@ function openCase(c, noc) {
 	canUpdate = false;
 
 	if (noc == undefined) {
-		noc = 1;
+		noc = 100;
 	}
 
 	if (noc > 1) {
