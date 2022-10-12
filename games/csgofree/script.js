@@ -9,7 +9,7 @@ if (localStorage['uid'] == undefined) {
 	localStorage['uid'] = Math.random();
 	var userdata = {
 		inv:[
-			{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},
+			
 		],
 		money:999999999999999999999,
 		roulette:0,
@@ -75,7 +75,7 @@ var items = [
 	{name:'Revolver Case', price:2.60, class:'standard', case:'revolver', type:'case', needkey:true, rankNeeded:4},
 	{name:'Gamma Case 2', price:1.50, class:'standard', case:'gamma2', type:'case', needkey:true, rankNeeded:5},
 	{name:'Stattrak Case 3', price:10.00, class:'standard', case:'stattrak3', type:'case', needkey:false, rankNeeded:5},
-	{name:'Knife Case', price:1000.00, class:'standard', case:'knife', type:'case', needkey:false, rankNeeded:5},
+	{name:'Knife Case', price:0.0, class:'standard', case:'knife', type:'case', needkey:false, rankNeeded:0},
 	{name:'Chroma Case 3', price:1.50, class:'standard', case:'chroma3', type:'case', needkey:true, rankNeeded:5},
 	{name:'The Chop Shop Collection', price:18.00, class:'standard', case:'chopshop', type:'case', needkey:false, rankNeeded:4},
 	{name:'Stattrak Case 4', price:200.00, class:'standard', case:'stattrak4', type:'case', needkey:false, rankNeeded:6},
