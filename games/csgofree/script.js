@@ -12,7 +12,7 @@ if (localStorage['uid'] == undefined) {
 			
 		],
 		money:999999999999999999999,
-		roulette:69,
+		roulette:0,
 		upgrades:{},
 		moneyarray:[],
 	}
@@ -40,7 +40,7 @@ if (localStorage['settingsF'] == undefined) {
 	localStorage['settingsF'] = 'false';
 }
 
-if (userdata. == undefined) {
+if (userdata.roulette == undefined) {
 	userdata.roulette = 0;
 }
 
@@ -1663,8 +1663,8 @@ function flipCoin() {
 
 	var r = Math.floor(Math.random() * 2)
 	if (r == 1) {
-		$('#coins').className = 'flipToT';
-		landed = 't';
+		$('#coins').className = 'flipToCT';
+		landed = 'ct';
 	} else {
 		$('#coins').className = 'flipToT';
 		landed = 't';
@@ -2432,3 +2432,4 @@ setInterval(function() {
 //
 
 //
+ 
