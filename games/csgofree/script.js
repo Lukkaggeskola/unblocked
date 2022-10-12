@@ -9,7 +9,7 @@ if (localStorage['uid'] == undefined) {
 	localStorage['uid'] = Math.random();
 	var userdata = {
 		inv:[
-			{name:'Spectrum Case',stattrak:false,t:'u'}
+			{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},{name:'Knife Case',stattrak:false,t:'u'},
 		],
 		money:999999999999999999999,
 		roulette:0,
