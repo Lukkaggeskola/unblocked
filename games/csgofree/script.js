@@ -2298,7 +2298,26 @@ function rouletteWheel(n,m) {
 	$('#w_coins').innerHTML = userdata.roulette.toFixed(0);
 	if (n == t[d].t) {
 		if (n == 'green') {
-			userdata.roulette = userdata.roulette + (m * 2000);
+			userdata.roulette = userdata.roulette + (m * 20);
+			userdata.roulette = userdata.roulette + (m * 20);
+			userdata.roulette = userdata.roulette + (m * 20);
+			userdata.roulette = userdata.roulette + (m * 20);
+			userdata.roulette = userdata.roulette + (m * 20);
+			userdata.roulette = userdata.roulette + (m * 20);
+			userdata.roulette = userdata.roulette + (m * 20);
+			userdata.roulette = userdata.roulette + (m * 20);
+			userdata.roulette = userdata.roulette + (m * 20);
+			userdata.roulette = userdata.roulette + (m * 20);
+			userdata.roulette = userdata.roulette + (m * 20);
+			userdata.roulette = userdata.roulette + (m * 20);
+			userdata.roulette = userdata.roulette + (m * 20);
+			userdata.roulette = userdata.roulette + (m * 20);
+			userdata.roulette = userdata.roulette + (m * 20);
+			userdata.roulette = userdata.roulette + (m * 20);
+			userdata.roulette = userdata.roulette + (m * 20);
+			userdata.roulette = userdata.roulette + (m * 20);
+			
+			
 		} else {
 			userdata.roulette = userdata.roulette + m * 2;
 		}
