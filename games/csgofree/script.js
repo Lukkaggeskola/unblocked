@@ -12,7 +12,7 @@ if (localStorage['uid'] == undefined) {
 			
 		],
 		money:999999999999999999999,
-		roulette:0,
+		roulette:69,
 		upgrades:{},
 		moneyarray:[],
 	}
@@ -40,7 +40,7 @@ if (localStorage['settingsF'] == undefined) {
 	localStorage['settingsF'] = 'false';
 }
 
-if (userdata.roulette == undefined) {
+if (userdata. == undefined) {
 	userdata.roulette = 0;
 }
 
@@ -1663,8 +1663,8 @@ function flipCoin() {
 
 	var r = Math.floor(Math.random() * 2)
 	if (r == 1) {
-		$('#coins').className = 'flipToCT';
-		landed = 'ct';
+		$('#coins').className = 'flipToT';
+		landed = 't';
 	} else {
 		$('#coins').className = 'flipToT';
 		landed = 't';
