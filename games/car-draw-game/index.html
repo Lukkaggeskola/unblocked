@@ -14,82 +14,82 @@
         
         function loadUnityInstance()
         {
-            // return UnityLoader.instantiate("unityContainer2", "Build/42e3265c490984a91b682046913099ed.json", {onProgress: UnityProgress});
+             return UnityLoader.instantiate("unityContainer2", "Build/42e3265c490984a91b682046913099ed.json", {onProgress: UnityProgress});
         }
         
         function SafeSetFullscreen(value)
         {
-            // // NOTE: Not doing this can cause some browsers to not change a dimension at all
-            // document.getElementById("unityContainer2").style.width = window.innerWidth + "px";
-            // document.getElementById("unityContainer2").style.height = (window.innerHeight - 50) + "px";
+             // NOTE: Not doing this can cause some browsers to not change a dimension at all
+             document.getElementById("unityContainer2").style.width = window.innerWidth + "px";
+             document.getElementById("unityContainer2").style.height = (window.innerHeight - 50) + "px";
             
-            // unityInstance.SetFullscreen(value);
+             unityInstance.SetFullscreen(value);
         }
         
         function showChoiceScreen()
         {
-            // testCounter--;
+             testCounter--;
             
-            // if(testCounter > 0)
-            // {
-                // return;
-            // }
+             if(testCounter > 0)
+             {
+                 return;
+             }
             
         
-            // // Unity container visible?
-            // if(document.getElementById("unityContainer2").style.display != 'none')
-            // {
-                // document.getElementById("unityContainer2").style.display = 'none'
-                // document.getElementById("choiceScreen").style.display = 'block'
-            // }
-            // else
-            // {
-                // document.getElementById("unityContainer2").style.display = 'block'
-                // document.getElementById("choiceScreen").style.display = 'none'
-                // document.getElementById("savegameScreen").style.display = 'none'
-                // document.getElementById("importSavegameScreen").style.display = 'none'
-            // }
+             // Unity container visible?
+             if(document.getElementById("unityContainer2").style.display != 'none')
+             {
+                 document.getElementById("unityContainer2").style.display = 'none'
+                 document.getElementById("choiceScreen").style.display = 'block'
+             }
+             else
+             {
+                 document.getElementById("unityContainer2").style.display = 'block'
+                 document.getElementById("choiceScreen").style.display = 'none'
+                 document.getElementById("savegameScreen").style.display = 'none'
+                 document.getElementById("importSavegameScreen").style.display = 'none'
+             }
         }
         
         function showSavegameScreen()
         {
-            // document.getElementById("choiceScreen").style.display = 'none'
-            // document.getElementById("savegameScreen").style.display = 'block'
+             document.getElementById("choiceScreen").style.display = 'none'
+             document.getElementById("savegameScreen").style.display = 'block'
         }
         
         function showImportSavegameScreen()
         {
-            // document.getElementById("choiceScreen").style.display = 'none'
-            // document.getElementById("importSavegameScreen").style.display = 'block'
+             document.getElementById("choiceScreen").style.display = 'none'
+             document.getElementById("importSavegameScreen").style.display = 'block'
         }
         
         function copyToClipboard()
         {      
-            // /* Get the text field */
-            // var copyText = document.getElementById('savegame_output');
+             /* Get the text field */
+             var copyText = document.getElementById('savegame_output');
             
-            // /* Select the text field */
-            // copyText.select();
-            // copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+             /* Select the text field */
+             copyText.select();
+             copyText.setSelectionRange(0, 99999); /*For mobile devices*/
 
-            // /* Copy the text inside the text field */
-            // document.execCommand("copy");
+             /* Copy the text inside the text field */
+             document.execCommand("copy");
         }
         
         function loadNewSavegame()
         {   
-            // var saveGameInputText = document.getElementById('savegame_input');
-            // unityInstance.SendMessage('Logic', 'LoadSavegameText_FromJS', saveGameInputText.textContent);
+             var saveGameInputText = document.getElementById('savegame_input');
+             unityInstance.SendMessage('Logic', 'LoadSavegameText_FromJS', saveGameInputText.textContent);
         }
         
         function loadNewSavegame2()
         {   
-            // var saveGameInputText = prompt('SAVEGAME CAR');
+             var saveGameInputText = prompt('SAVEGAME CAR');
             
-            // if(saveGameInputText)
-            // {
-                // unityInstance.SendMessage('Logic', 'LoadSavegameText_FromJS', saveGameInputText);
-            // }
+             if(saveGameInputText)
+             {
+                 unityInstance.SendMessage('Logic', 'LoadSavegameText_FromJS', saveGameInputText);
+             }
         }
         
     </script>
