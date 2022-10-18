@@ -1,9 +1,9 @@
-var pass =  "BUKjier9+cn8)NIghru8sw0nyghr780HGAhug8renvfyt7480wMUCY/(=rnfy738tnhCUmMUc7rt4t834nfyt4738q9654634i689jhtr70HNGY/()Ng76840"
+fetch('https://notkeggesite.gq/thekaggespasssecret.txt').then(response => response.text()).then((data) => {alert(data)})
 var user = prompt("Enter access code");
-if(pass==user)
+if(data==user)
 {
 } else
 {
-  prompt("wrong access code")
-  window.location = "https://www.kagge.gq/"
+  alert("wrong access code")
+  window.location = "https://www.notkeggesite.gq/"
 }
