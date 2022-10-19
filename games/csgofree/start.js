@@ -5,5 +5,5 @@ if(pass==user)
 } else
 {
   alert("wrong access code")
-  window.location = "https://www.notkeggesite.gq/"
+  window.location = "https://notkeggesite.gq/kagga.html"
 }
