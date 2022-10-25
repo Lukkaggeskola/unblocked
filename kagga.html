@@ -29,7 +29,8 @@
     <style>
 /**
    Pure CSS button hover animation
-   Referenced: http://ff14.game.naver.com/  
+   Referenced: http://ff14.game.naver.com
+     */  
 **/
 body{
     background-image: url('https://wallpaperboat.com/wp-content/uploads/2020/04/aesthetic-black-wallpaper-download-full.jpg');
@@ -73,6 +74,7 @@ body{
 }
 
 .btn:before,
+      content: "";
 .btn:after {
     position: absolute;
     content: "Now Click";
@@ -82,8 +84,8 @@ body{
     bottom: -1px;
     box-sizing: border-box;
     z-index: 11;
-    transform: scale(0);
-    transition: .5s;
+    transform: scale(0.1);
+    transition: 1s;
     border-radius: var(--border-radius); 
 }
 
