@@ -28,6 +28,82 @@
     <title>Г̶̱͔̘̭̯̬͂̑̈̂̔̕͘͜͠а̴͇͇̘̣̭̗̾͒͛͂͆̈̋͂̌̕м̵̰͙̝͖̫̂̂̌̓ё̷̼͎̘̤̺́́̆͝х̶͈̗̞͙̇͜у̵͔̣̺̳̞͐̏̈́͆̓̉̀͛́б̴̦͍͉͉͝</title>
     <link rel="icon" type="image/x-icon" href="/Din stycketext.png">
     <style>
+	    
+    .bn5 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.bn5:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowingbn5 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowingbn5 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bn5:active {
+  color: #000;
+}
+
+.bn5:active:after {
+  background: transparent;
+}
+
+.bn5:hover:before {
+  opacity: 1;
+}
+
+.bn5:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #191919;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
       		@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 * {
@@ -217,26 +293,26 @@ padding: 10px;
   
 <p>
   <h3 class="Viptext">Wow ny sida</h3>
-  <button type="button" class="btn" onclick="location.href='/games/eggycar/index.html'"         >Kaggy Car</button>
-  <button type="button" class="btn"  onclick="location.href='/games/kahoot.html'" >Kahoot Hack</button>
-  <button type="button" class="btn"  onclick="location.href='/games/makeitmeme/'" >Make It Meme</button>
-  <button type="button" class="btn"  onclick="location.href='/games/miniroyale/'" >Mini Royale</button>
-  <button type="button" class="btn"  onclick="location.href='/games/motox3m/'" >Moto X3M</button>
-  <button type="button" class="btn"  onclick="location.href='/games/moto3xmpoolparty/'" >Moto X3M Pool Party</button>
-  <button type="button" class="btn"  onclick="location.href='/games/motox3mwinter/'" >Moto X3M Winter</button>
-  <button type="button" class="btn" onclick="location.href='/games/penalty-shootout/'"          >Penalty Shootout</button>
-  <button type="button" class="btn" onclick="location.href='/games/slope/'"          >Slope</button>
-  <button type="button" class="btn" onclick="location.href='/games/socceronline/'"       >Soccer Online</button>
-    <button type="button" class="btn" onclick="location.href='/games/spinsoccer/'"       >Spin Soccer</button>
-  <button type="button" class="btn" onclick="location.href='/games/stickmanhook/'"       >Stickman Hook</button>
-  <button type="button" class="btn" onclick="location.href='/games/stickmantrail/'"       >Stickman Trail</button>
-  <button type="button" class="btn" onclick="location.href='/games/subwaysurfers/'"       >Subway Surfers</button>
-  <button type="button" class="btn" onclick="location.href='/games/table/gameplay2.html'">Table tennis</button>
-  <button type="button" class="btn" onclick="location.href='/games/tetris'"              >Tetris</button>
-  <button type="button" class="btn" onclick="location.href='/games/truckline'"              >Truck Line</button>
-  <button type="button" class="btn" onclick="location.href='/games/tunnel-rush/'">Tunnel Rush</button>
-  <button type="button" class="btn" onclick="location.href='/games/tunnel-rush-2/'">Tunnel Rush 2</button>
-    <button type="button" class="btn" style="color:ADFF2" onclick="location.href='kagga.html'"> <-- Tillbaka</button>
+  <button type="button" class="bn5" onclick="location.href='/games/eggycar/index.html'"         >Kaggy Car</button>
+  <button type="button" class="bn5"  onclick="location.href='/games/kahoot.html'" >Kahoot Hack</button>
+  <button type="button" class="bn5"  onclick="location.href='/games/makeitmeme/'" >Make It Meme</button>
+  <button type="button" class="bn5"  onclick="location.href='/games/miniroyale/'" >Mini Royale</button>
+  <button type="button" class="bn5"  onclick="location.href='/games/motox3m/'" >Moto X3M</button>
+  <button type="button" class="bn5"  onclick="location.href='/games/moto3xmpoolparty/'" >Moto X3M Pool Party</button>
+  <button type="button" class="bn5"  onclick="location.href='/games/motox3mwinter/'" >Moto X3M Winter</button>
+  <button type="button" class="bn5" onclick="location.href='/games/penalty-shootout/'"          >Penalty Shootout</button>
+  <button type="button" class="bn5" onclick="location.href='/games/slope/'"          >Slope</button>
+  <button type="button" class="bn5" onclick="location.href='/games/socceronline/'"       >Soccer Online</button>
+    <button type="button" class="bn5" onclick="location.href='/games/spinsoccer/'"       >Spin Soccer</button>
+  <button type="button" class="bn5" onclick="location.href='/games/stickmanhook/'"       >Stickman Hook</button>
+  <button type="button" class="bn5" onclick="location.href='/games/stickmantrail/'"       >Stickman Trail</button>
+  <button type="button" class="bn5" onclick="location.href='/games/subwaysurfers/'"       >Subway Surfers</button>
+  <button type="button" class="bn5" onclick="location.href='/games/table/gameplay2.html'">Table tennis</button>
+  <button type="button" class="bn5" onclick="location.href='/games/tetris'"              >Tetris</button>
+  <button type="button" class="bn5" onclick="location.href='/games/truckline'"              >Truck Line</button>
+  <button type="button" class="bn5" onclick="location.href='/games/tunnel-rush/'">Tunnel Rush</button>
+  <button type="button" class="bn5" onclick="location.href='/games/tunnel-rush-2/'">Tunnel Rush 2</button>
+    <button type="button" class="bn5" style="color:ADFF2" onclick="location.href='kagga.html'"> <-- Tillbaka</button>
   
 
   
