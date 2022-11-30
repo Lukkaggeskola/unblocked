@@ -24,6 +24,35 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
+      const db = firebase.database();
+const username = prompt("choose a name");
+function sendMessage(e) {
+  e.preventDefault();
+  const timestamp = Date.now();
+  const msgInput = document.getElementById("msgInput");
+  const message = msgInput.value;
+  messageInput.value = "";
+
+  document
+    .getElementById("messages")
+   .scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+
+  db.ref("messages/" + timestamp).set({
+    username,
+    message,
+  });
+}
+
+const fetchChat = db.ref("messages/");
+
+fetchChat.on("child_added", function (snapshot) {
+ const messages = snapshot.val();
+  const message = `<li class=${ 
+    username === messages.username ? "sent" : "receive"
+  }><span>${messages.username}: </span>${messages.message}</li>;
+ document.getElementById("messages").innerHTML += message;
+});
+      
 </script>
   </head>
   <body>
