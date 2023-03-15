@@ -21,5 +21,11 @@ function UnityProgress(unityInstance, progress) {
     unityInstance.progress.empty.style.width = (100 * (1 - progress)) + "%";
     if (progress == 1)
       unityInstance.logo.style.display = unityInstance.progress.style.display = "none";
-document.body.style.backgroundColor = "#e43314";
+
   }
+    
+    if (progress =< 0.95){
+        alert("Click OK To Load Game")
+        document.body.style.backgroundColor = "#231f20";
+        
+    }
