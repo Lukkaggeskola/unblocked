@@ -24,8 +24,4 @@ function UnityProgress(unityInstance, progress) {
 
   }
     
-    if (progress =< 0.95){
-        alert("Click OK To Load Game")
-        document.body.style.backgroundColor = "#231f20";
-        
-    }
+  
