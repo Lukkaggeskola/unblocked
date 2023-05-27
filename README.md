@@ -1,3 +1,1 @@
-Email kaggesite@gmail.com for a account
-
-DESKTOP ONLY
+nothing to see here
